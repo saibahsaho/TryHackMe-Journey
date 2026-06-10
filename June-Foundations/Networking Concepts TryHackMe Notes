@@ -1,0 +1,112 @@
+In this room, I have learned the foundations of computer networking and how devices communicate over networks using protocols and layered models.
+
+# The room covered:
+- OSI Model
+- TCP/IP Model
+- IP Addresses and Subnets
+- TCP vs UDP
+- Encapsulation
+- Telnet
+- Basic HTTP communication
+
+# OSI Layers
+Layer          Name           Purpose
+7          Application        User interaction with applications
+6          Presentation       Data formatting/encryption
+5          Session            Maintain communication session
+4          Transport          Reliable delivery (TCP/UDP)
+3          Network            Routing and IP addresses
+2          Data Link          MAC addresses and Switching
+1          Physical           Cables, signals and hardware
+
+
+# Key Understanding 
+- Data moves from Layer 7 down to Layer 1 when sent.
+- The receiving device processes the data from Layer 1 back to Layer 7.
+
+
+# TCP/IP Model
+The TCP/IP model is the practical networking model used on the internet.
+
+TCP/IP Layers
+
+Layer                Function
+Application          User services
+Transport            TCP/UDP communication 
+Internet             IP routing
+Network Access       Physical network communication 
+
+Improtant Point
+The TCP/IP model is simpler than the OSI model and is used in real-world networking.
+
+IP Addresses and Subnets 
+I learned how devices are identified on networks using IP addresses.
+Example IPv4 Address 192.168.1.1
+Key Concepts 
+- Every device needs an IP address.
+- Subnetting divides networks into smaller sections.
+- Routers use IP addresses to send packets between networks.
+
+# TCP vs UDP
+TCP is:
+- Reliable 
+- Connection-oriented
+- Slower but accurate
+
+Used for:
+- Website
+- File transfers
+- SSH
+
+UDP is:
+- Faster
+- Connectionless
+- Less reliable
+
+Used for:
+- Streaming
+- Gaming
+- Voice calls
+
+# Encapsulation 
+Encapsulation is the process of wrapping data with protocol information as it moves through network layers.
+
+# Process
+Application Data--> Segment--> Packet--> Frame--> Bits.  Each layer adds its own header information before transmission.
+
+# Telnet 
+Telnet allows communication with remote services over TCP ports.   In this lab, I connected to different services manually using Telnet.
+
+# Commands Used Echo Server (Port 7)
+Telnet 10.130.158.166 7 the server echoed back any text I typed. 
+
+# Daytime Server (Port 13)
+Telnet 10.130.158.166 13 the server returned the current date and time.
+
+# HTTP Server (Port 80)
+Telnet 10.130.158.166 80 I manually sent an HTTP request: 
+http
+GET / HTTP/1.1
+Host: telnet.thm this returned http HTTP/1.1 200 ok and revealed the flag: THM{TELNET_MASTER}
+
+# What I Learned
+After completing this room, I now understand:
+- How network communication works
+- The purpose of networking layers
+- The difference between TCP and UDP
+- How IP addressing works
+- How data is encapsulated 
+- How to manually communicate with services using Telnet
+- How HTTP requests work at a low level
+
+# Skills Practiced 
+- Basic networking 
+- TCP/IP fundamentals
+- Telnet usage
+- HTTP request structure
+- Command-line networking 
+- Service interaction through ports
+
+# Final Thoughts
+This room gave me a strong introduction to networking fundamentals and helped me understand how communication happens between systems on network.
+It also helped me become more comfortable using Linux terminals and interacting directly with network services.
