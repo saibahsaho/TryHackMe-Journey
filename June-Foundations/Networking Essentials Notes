@@ -1,0 +1,82 @@
+In this room, I learned more practical networking concepts and how devices communicate inside local networks and across the internet. This room helped me understand how computers find each other, get internet access and troubleshoot network problems.
+
+# DHCP - Automatic Network Configuration. DHCP stand for: Dynamic Host Configuration Protocol
+
+# DHCp automatically gives devices their:
+- IP address
+- Subnet mask
+- Default gateway 
+- DNS server
+Without DHCP, we would have to configure network settings manually on every device.
+Example:
+When connecting a phone or laptop to Wi-Fi, DHCP automatically assigns the network settings.
+
+# ARP - Finding MAC Addresses. ARP stand for: Address Resolution Protocol.
+ARP helps devices find the MAC address connected to an IP address inside a local network.
+
+Simple explanation:
+- IP address = device location
+- MAC address = Physical device identity
+A computer uses ARP to ask:
+
+" Who has this IP address?"
+The correct device responds with its MAC address.
+
+# ICMP - Troubleshooting Networks. ICMP stands for: Internet Control Message Protocol.
+ICMP is mainly used for network diagnostics and troubleshooting.
+
+# Ping 
+The ping command checks if another device is reachable.
+Example: Ping 192.168.11.1 it sends an ICMP Echo Request and waits for an ICMP Echo Reply.
+This helps verify:
+- Network connectivity
+- Packet loss
+- Response time
+
+# Traceroute
+Traceroute shows the path packets take across routers to reach a destination.
+Example: traceroute example.com
+Traceroute works using the TTL (Time To Live) field.
+Each router decreases the TTL value by 1. When TTL reaches 0, the router responds and reveals itself.
+This helps identify:
+- Routing paths
+- Delays
+- Network issues
+
+# Routing
+Routers move packets between networks. They examine destination IP addresses and decide where packets should go next. Routing allows devices on different networks to communicate across the internet.
+
+# NAT - Network Address Translation
+NAT allows many private devices to share one public IP address.
+Example: A home router may connect:
+- Phones
+- Laptops
+- TVs
+- Gaming consoles
+all through a single public IP address.
+Why NAT is important:
+- Saves IPv4 addresses
+- Improves security 
+- Allows many devices to access the internet simultaneously 
+
+The router keeps track of connections using port numbers.
+
+# What I Learned 
+After completing this room, I now understand:
+- How devices automatically get IP addresses
+- How computers find MAC addresses using ARP
+- How ping and traceroute work
+- How routers forward traffic 
+- How NAT allows many devices to share one public IP
+
+# Skills Practiced 
+- Network troubleshooting 
+- Using ping
+- Using traceroute
+- Understanding DHCP
+- Understanding ARP
+- Understanding NAT
+- Reading networking diagrams
+
+# Final Throughts
+This room improved my understanding of how local networks and internet communication work behind the scenes. I also became more comfortable reading networking information and understanding how routers and protocols interact in real-world networks.
